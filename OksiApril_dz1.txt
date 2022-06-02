@@ -1,0 +1,106 @@
+1) Посмотреть где я
+pwd
+
+2) Создать папку
+mkdir HW1
+
+3) Зайти в папку
+cd HW1
+
+4) Создать 3 папки
+mkdir folder1 folder2 folder3
+
+5) Зайти в любую папку
+cd folder1
+
+6) Создать 5 файлов (3 txt, 2 json)
+touch 001.txt 002.txt 003.txt 004.json 005.json
+
+7) Создать 3 папки
+mkdir May June July
+
+8. Вывести список содержимого папки
+ls -la
+
+9) + Открыть любой txt файл
+vim 001.txt
+
+10) + написать туда что-нибудь, любой текст.
+нажать клавишу i, написать текст 
+Hello my name is Oksana
+my name is Oksana
+name is
+is Oksana
+Oksana Oksi
+!!! qqq
+111 qqqq
+222qqqq
+333qqqq
+Helloqqqq
+5555qqqqqq
+Helloqq
+qqqrrr
+Hellorrrrr Hello
+
+11) + сохранить и выйти.
+Клавиша Esc, клавиша :, клавиши w и q, клавиша Enter
+
+12) Выйти из папки на уровень выше
+cd ..
+
+—
+
+13) переместить любые 2 файла, которые вы создали, в любую другую папку.
+mv folder1/001.txt folder1/002.txt folder2
+
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку.
+cp folder1/004.json folder1/005.json folder3
+
+15) Найти файл по имени
+find -name 001.txt
+
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает.
+tail -f folder2/001.txt
+
+17) вывести несколько первых строк из текстового файла
+head -2 folder2/001.txt
+
+18) вывести несколько последних строк из текстового файла
+tail -2 folder2/001.txt
+
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает.
+less folder2/001.txt, нажать на клавишу /, ввести значение, которое ищем по всему файлу, нажать Enter (все найденные слова будут подсвечены)
+
+20) вывести дату и время
+date
+=========
+
+Задание *
+
+1) 
+curl http://162.55.220.72:5005/terminal-hw-request
+curl 'http://162.55.220.72:5005/get_method?name=Oksana&age=31'
+
+2)
+ОПИСАНИЕ ЗАПУСКА
+создать папку
+mkdir HW1
+
+создать файл 
+nano script.sh
+
+#!Gitbash\bin\bash
+
+cd HW1
+mkdir folder1 folder2 folder3
+cd folder1
+touch 1.txt 2.txt 3.txt 4.json 5.json
+mkdir May June July
+ls -la
+mv 1.txt 2.txt May
+
+сохранить скрипт
+комбинация клавиш Ctrl+O, нажать клавишу Enter
+
+запустить файл 
+bash script.sh
