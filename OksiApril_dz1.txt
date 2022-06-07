@@ -54,10 +54,10 @@ cd ..
 —
 
 13) переместить любые 2 файла, которые вы создали, в любую другую папку.
-mv folder1/001.txt folder1/002.txt folder2
+mv folder1/{file1.txt, file2.txt} folder2
 
 14) скопировать любые 2 файла, которые вы создали, в любую другую папку.
-cp folder1/004.json folder1/005.json folder3
+cp folder1/{file1.txt, file2.txt} folder2
 
 15) найти файл по имени.
 find -name 001.txt
@@ -87,6 +87,7 @@ curl 'http://162.55.220.72:5005/get_method?name=Oksana&age=31'
 2)  Написать скрипт который выполнит автоматически пункты.
 
 ОПИСАНИЕ ЗАПУСКА
+
 создать папку
 mkdir HW1
 
